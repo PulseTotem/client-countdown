@@ -1,0 +1,46 @@
+<div ng-if="!connected">
+  Waiting for connection...
+</div>
+<div ng-if="connected">
+  <h1>{{'COUNTDOWN.NAME' | translate}} : {{'COUNTDOWN.SETTINGS' | translate}}</h1>
+  <div layout-gt-sm="row">
+    <md-input-container class="md-block" flex-gt-sm>
+      <label>{{'COUNTDOWN.LOGO' | translate}}</label>
+      <input ng-model="countdown.logo">
+    </md-input-container>
+    <md-input-container class="md-block" flex-gt-sm>
+      <label>{{'COUNTDOWN.TITLE' | translate}}</label>
+      <input ng-model="countdown.title">
+    </md-input-container>
+    <md-input-container class="md-block" flex-gt-sm>
+      <label>{{'COUNTDOWN.CONTENT' | translate}}</label>
+      <input ng-model="countdown.content">
+    </md-input-container>
+    <md-input-container class="md-block" flex-gt-sm>
+      <label>{{'COUNTDOWN.END_MESSAGE' | translate}}</label>
+      <input ng-model="countdown.endmessage">
+    </md-input-container>
+  </div>
+  <div layout="row">
+    <h3><md-icon md-svg-icon="./bower_components/material-design-icons/image/svg/production/ic_timer_24px.svg"></md-icon> {{'COUNTDOWN.TIMER.NAME' | translate}}</h3>
+    <md-input-container class="md-block">
+      <label>{{'COUNTDOWN.TIMER.HOURS' | translate}}</label>
+      <input ng-model="countdown.timer.hours" type="number">
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>{{'COUNTDOWN.TIMER.MINUTES' | translate}}</label>
+      <input ng-model="countdown.timer.minutes" type="number">
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>{{'COUNTDOWN.TIMER.SECONDS' | translate}}</label>
+      <input ng-model="countdown.timer.seconds" type="number">
+    </md-input-container>
+  </div>
+  <hr/>
+  <div layout-gt-sm="row">
+    <md-button class="md-raised" ng-click="wait()">{{'COUNTDOWN.WAIT' | translate}}</md-button>
+    <md-button class="md-raised md-primary" ng-click="ready()">{{'COUNTDOWN.READY' | translate}}</md-button>
+    <md-button class="md-raised md-accent" ng-click="run()">{{'COUNTDOWN.RUN' | translate}}</md-button>
+    <md-button class="md-raised md-warn" ng-click="pause()">{{'COUNTDOWN.PAUSE' | translate}}</md-button>
+  </div>
+</div>

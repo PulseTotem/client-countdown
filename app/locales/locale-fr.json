@@ -1,0 +1,28 @@
+{
+  "MENU" : {
+    "LANGUAGE" : "Langage",
+    "ENGLISH": "English",
+    "FRENCH": "Fran&ccedil;ais"
+  },
+  "MAIN" : {
+    "PAGE_NOT_FOUND" : "La page que vous recherchez n'existe pas..."
+  },
+  "COUNTDOWN" : {
+    "NAME" : "Chrono",
+    "SETTINGS" : "Configuration",
+    "LOGO" : "Url du Logo",
+    "TITLE" : "Titre",
+    "CONTENT" : "Contenu",
+    "END_MESSAGE" : "Message de fin",
+    "TIMER" : {
+      "NAME" : "Timer",
+      "HOURS" : "Heures",
+      "MINUTES" : "Minutes",
+      "SECONDS" : "Secondes"
+    },
+    "WAIT" : "Ecran d'attente",
+    "READY" : "Prêt ?",
+    "RUN" : "Run",
+    "PAUSE" : "Pause"
+  }
+}
