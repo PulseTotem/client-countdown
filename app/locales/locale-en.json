@@ -1,0 +1,28 @@
+{
+    "MENU" : {
+        "LANGUAGE" : "Language",
+        "ENGLISH": "English",
+        "FRENCH": "Fran&ccedil;ais"
+    },
+    "MAIN" : {
+        "PAGE_NOT_FOUND" : "The page you search doesn't exist..."
+    },
+  "COUNTDOWN" : {
+    "NAME" : "Countdown",
+    "SETTINGS" : "Settings",
+    "LOGO" : "Logo's Url",
+    "TITLE" : "Title",
+    "CONTENT" : "Content",
+    "END_MESSAGE" : "End Message",
+    "TIMER" : {
+      "NAME" : "Timer",
+      "HOURS" : "Hours",
+      "MINUTES" : "Minutes",
+      "SECONDS" : "Seconds"
+    },
+    "WAIT" : "Wait Status",
+    "READY" : "Ready Status",
+    "RUN" : "Run",
+    "PAUSE" : "Pause"
+  }
+}
