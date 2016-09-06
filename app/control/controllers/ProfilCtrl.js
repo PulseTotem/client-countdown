@@ -11,31 +11,18 @@ angular.module('PulseTotemControl')
   .controller('PulseTotemControl.ProfilCtrl', ['$rootScope', '$scope', '$routeParams', 'CountdownSocket', 'callbackManager', function($rootScope, $scope, $routeParams, CountdownSocket, callbackManager) {
     $scope.connected = false;
 
-    var initSession = function() {
-      /*CountdownSocket.on("LockedControl", function (response) {
-        callbackManager(response, function (sessionDesc) {
-            $scope.$apply(function () {
-              $rootScope.session = sessionDesc;
-              if($rootScope.session._status == 'ACTIVE') {
-                $scope.waiting = false;
-                //initDraw();
-              }
-            });
-          },
-          function (fail) {
-            console.error(fail);
-            console.error("An error occurred during Locked Control.");
-          }
-        );
-      });*/
+    $scope.countdown = null;
 
-      $scope.countdown = {
-        timer : {
-          hours : 0,
-          minutes : 0,
-          seconds : 0
-        }
-      };
+    var initSession = function() {
+      if($scope.countdown == null) {
+        $scope.countdown = {
+          timer: {
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+          }
+        };
+      }
 
       $scope.wait = function() {
         CountdownSocket.emit("Wait", {'countdown': $scope.countdown});
