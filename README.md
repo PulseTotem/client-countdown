@@ -10,3 +10,7 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+## License
+
+This code has been created by Christian Brel and Simon Urli. It is released under the term of GPLv3 License.
